@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="me.kevingleason.mslab.UserAuthentication.AuthUser"
+    android:background="@drawable/genes"
+    android:scrollbarThumbVertical="@color/msLabPrimary"
+    >
+
+
+
+
+    <!--This is for the Linear Layout to Contain the  Widgets-->
+    <LinearLayout
+     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:orientation="vertical"
+     android:padding="10dp"
+     android:gravity="center"
+     android:layout_gravity="center"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="10dp"
+     android:background="@drawable/background_for_auth"
+        >
+
+
+
+
+
+
+
+        <!--This  is for the Text To Show-->
+        <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:textColor="@color/msLabWhite"
+         android:textSize="30sp"
+         android:textAlignment="center"
+         android:text="@string/motiveOfAuth"
+         android:id="@+id/authMotive"
+         android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <!--End of the Text to show-->
+
+
+
+
+
+
+
+
+        <!--This is for the user name-->
+            <EditText
+             android:layout_height="50dp"
+             android:layout_width="match_parent"
+             android:id="@+id/userName"
+             android:textColor="#222"
+             android:hint="Enter your name here..."
+             android:textSize="15sp"
+             android:textColorHint="#222"
+             android:layout_toRightOf="@+id/uImage"
+             android:background="@drawable/auth_input_field"
+             android:drawableLeft="@drawable/profile"
+             android:paddingLeft="10dp"
+             android:paddingRight="10dp"
+             android:drawablePadding="20dp"
+             android:layout_marginBottom="30dp"
+                />
+        <!--End of the user name-->
+
+        <!--This is for the password-->
+        <EditText
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:id="@+id/userPassword"
+            android:textColor="#222"
+            android:hint="Enter your password here..."
+            android:textSize="15sp"
+            android:textColorHint="#222"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:background="@drawable/auth_input_field"
+            android:paddingRight="10dp"
+            android:drawableLeft="@drawable/lock"
+            android:layout_toRightOf="@+id/lockImage"
+            android:drawablePadding="20dp"
+            android:layout_marginBottom="20dp"
+            />
+        <!--End of the password-->
+
+
+        <!--This is for the Password Mechanism-->
+        <CheckBox
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:textColor="@color/msLabWhite"
+         android:text="Show My Password"
+         android:layout_gravity="start"
+         android:id="@+id/passwordCheck"
+         android:onClick="PasswordCheckBox"
+            />
+        <!--End of the Password Mechanism-->
+    
+
+
+
+
+
+
+
+
+        <!--This is for the sign in button-->
+        <Button
+         android:layout_height="50dp"
+         android:layout_width="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textColor="@color/msLabWhite"
+         android:textSize="15sp"
+         android:background="@drawable/auth_sign_in_button"
+         android:text="Sign In"
+         android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_gravity="end"
+            android:onClick="SignIn"
+            />
+        <!--End for the sign in button-->
+
+
+
+
+
+
+
+
+
+     </LinearLayout>
+    <!--End  of the Linear Layout-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ScrollView>
